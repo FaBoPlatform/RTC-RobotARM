@@ -24,9 +24,14 @@ _FILE_DIR=os.path.abspath(os.path.dirname(__file__))
 import time
 import sys
 sys.path.append(_FILE_DIR+'/..')
+print _FILE_DIR+'/..'
 from lib import ARM
 
+arm_cls=ARM()
 
+arm=arm_cls.arm1
+HUMAN_INPUT=False
+AUTO=True
 # Import Service implementation class
 # <rtc-template block="service_impl">
 
