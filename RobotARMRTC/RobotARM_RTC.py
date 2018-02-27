@@ -24,7 +24,7 @@ _FILE_DIR=os.path.abspath(os.path.dirname(__file__))
 import time
 import sys
 sys.path.append(_FILE_DIR+'/..')
-
+print _FILE_DIR+'/..'
 from lib import ARM
 
 arm_cls=ARM()
