@@ -1,0 +1,32 @@
+2018-02-27 03:11:21,509 manager INFO 1.1.0
+2018-02-27 03:11:21,510 manager INFO Copyright (C) 2003-2010
+2018-02-27 03:11:21,511 manager INFO   Noriaki Ando
+2018-02-27 03:11:21,512 manager INFO   Intelligent Systems Research Institute, AIST
+2018-02-27 03:11:21,512 manager INFO Manager starting.
+2018-02-27 03:11:21,513 manager INFO Starting local logging.
+2018-02-27 03:11:21,533 manager.namingmanager INFO NameServer connection failed: corba/localhost
+2018-02-27 03:11:21,580 ManagerServant INFO Master manager not found
+2018-02-27 03:11:21,585 manager WARNING Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/OpenRTM_aist/Manager.py", line 1900, in initManagerServant
+    reffile = file(self._config.getProperty("manager.refstring_path"),'w')
+IOError: [Errno 13] Permission denied: '/var/log/rtcmanager.ref'
+
+2018-02-27 03:11:21,588 LocalServiceAdmin INFO All the local services are enabled.
+2018-02-27 03:11:21,617 manager INFO Component type conf file: RobotARM_RTC.conf loaded.
+2018-02-27 03:11:21,639 ec_base INFO setRate(1000000.000000) done
+2018-02-27 03:11:21,641 ec_base INFO setRate(1000.000000) done
+2018-02-27 03:11:21,646 rtobject INFO 1 execution context was created.
+2018-02-27 03:11:21,727 rtobject ERROR Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/OpenRTM_aist/RTObject.py", line 1143, in on_initialize
+    ret = self.onInitialize()
+  File "RobotARM_RTC.py", line 72, in onInitialize
+    self.arm=arm_cls.arm1
+NameError: global name 'arm_cls' is not defined
+
+2018-02-27 03:11:21,729 rtobject INFO Initial active configuration set is default-set.
+2018-02-27 03:11:21,730 rtobject ERROR on_initialize() failed.
+2018-02-27 03:11:21,732 ec_worker ERROR State of the RTC is not ACTIVE_STATE.
+2018-02-27 03:11:21,733 ec_worker WARNING ExecutionContext is already stopped.
+2018-02-27 03:11:21,734 ec_base ERROR Invoking on_shutdown() for each RTC failed.
+2018-02-27 03:11:21,736 ec_worker WARNING ExecutionContext is already stopped.
+2018-02-27 03:11:21,737 ec_base ERROR Invoking on_shutdown() for each RTC failed.
