@@ -6,7 +6,7 @@ Fabo-PCA9685==0.4
 LidarLiteV3==0.1
 MotorShield==0.0.9
 OpenRTM-aist-Python==1.1.2
-Pillow==2.6.1
+Pillow==3.3.2
 PyYAML==3.11
 RPi.GPIO==0.6.3
 Werkzeug==0.14.1
